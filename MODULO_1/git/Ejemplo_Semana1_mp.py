@@ -1,0 +1,1 @@
+print ('Ejemplo de la semana 1 sobre mi Proyecto de Python sobre historias clinicas')
