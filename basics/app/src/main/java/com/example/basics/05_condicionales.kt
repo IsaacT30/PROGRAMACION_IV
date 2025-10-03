@@ -2,14 +2,29 @@ package com.example.basics
 
 fun main() {
     println("Operadores Aritméticos")
-    val nombre1: String = "Yoda"
-    val nombre2: String = "Yoda"
-    val nombre3: String = String("Yoda".toCharArray())
+    println("Condicionales")
 
-    println("Igualdad estructural (contenido)")
-    println(nombre1 == nombre2) // true
-    println(nombre1 == nombre3) // true
-    println("Igualdad estructural (misma instancia)")
-    println(nombre1 === nombre2) // true
-    println(nombre1 === nombre3) // false
+    val value1 = 18
+    val value2 = 15
+
+    if (value1 > value2) {
+        println("El mayor es ${value1}")
+    } else {
+        println("El mayor es ${value2}")
+    }
+
+    fun main() {
+        println("Rango según nivel de fuerza")
+
+        val fuerza: Int = 10
+
+        if (fuerza > 10) {
+            println("maestro")
+        } else if (fuerza > 5) {
+            println("caballero jedi")
+        } else {
+            println("padawan")
+        }
+    }
 }
+

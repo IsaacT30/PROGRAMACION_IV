@@ -1,15 +1,16 @@
 package com.example.basics
 
 fun main() {
-    println("Operadores Aritméticos")
-    val nombre1: String = "Yoda"
-    val nombre2: String = "Yoda"
-    val nombre3: String = String("Yoda".toCharArray())
+    println("Operadores Igualdad en Historias Clínicas")
+    val paciente1: String = "Isaac"
+    val paciente2: String = "Isaac"
+    val paciente3: String = String("Isaac".toCharArray())
 
     println("Igualdad estructural (contenido)")
-    println(nombre1 == nombre2) // true
-    println(nombre1 == nombre3) // true
-    println("Igualdad estructural (misma instancia)")
-    println(nombre1 === nombre2) // true
-    println(nombre1 === nombre3) // false
+    println(paciente1 == paciente2)
+    println(paciente1 == paciente3)
+
+    println("Igualdad referencial (misma instancia)")
+    println(paciente1 === paciente2)
+    println(paciente1 === paciente3)
 }

@@ -7,10 +7,9 @@ fun main() {
     val nombre3: String = String("Yoda".toCharArray())
 
     println("Igualdad estructural (contenido)")
-    println(nombre1 == nombre2)
-    println(nombre1 == nombre3)
-
+    println(nombre1 == nombre2) // true
+    println(nombre1 == nombre3) // true
     println("Igualdad estructural (misma instancia)")
-    println(nombre1 === nombre2)
-    println(nombre1 === nombre3)
+    println(nombre1 === nombre2) // true
+    println(nombre1 === nombre3) // false
 }

@@ -1,14 +1,13 @@
 package com.example.basics
 
 fun main(){
-    print("Operadores logicos")
-    val edad: Int = 25
-    val entrenamiento: Boolean = true
-    val nivel: Int= 0
-    val esApto = edad>= 18 && entrenamiento && nivel > 5
-    val necesitaAyuda = !entrenamiento || nivel < 3
+    print("Operadores lógicos")
+    val edadPaciente: Int = 45
+    val tieneSeguro: Boolean = true
+    val gravedad: Int = 7
+    val puedeSerAtendido = edadPaciente >= 18 && tieneSeguro && gravedad > 5
+    val necesitaReferencia = !tieneSeguro || gravedad < 3
 
-    println("Es apto: ${esApto}")
-    println("Necesita Ayuda: ${necesitaAyuda}")
-
+    println("Puede ser atendido: ${puedeSerAtendido}")
+    println("Necesita referencia: ${necesitaReferencia}")
 }
