@@ -2,29 +2,28 @@ package com.example.basics
 
 fun main() {
     println("Operadores Aritméticos")
-    println("Condicionales")
+    println("Condicionales en Historias Clínicas")
 
-    val value1 = 18
-    val value2 = 15
+    val edadPaciente1 = 45
+    val edadPaciente2 = 32
 
-    if (value1 > value2) {
-        println("El mayor es ${value1}")
+    if (edadPaciente1 > edadPaciente2) {
+        println("El paciente de mayor edad tiene ${edadPaciente1} años")
     } else {
-        println("El mayor es ${value2}")
+        println("El paciente de mayor edad tiene ${edadPaciente2} años")
     }
 
     fun main() {
-        println("Rango según nivel de fuerza")
+        println("Clasificación según nivel de gravedad")
 
-        val fuerza: Int = 10
+        val gravedad: Int = 7
 
-        if (fuerza > 10) {
-            println("maestro")
-        } else if (fuerza > 5) {
-            println("caballero jedi")
+        if (gravedad > 8) {
+            println("Emergencia crítica")
+        } else if (gravedad > 5) {
+            println("Hospitalización necesaria")
         } else {
-            println("padawan")
+            println("Atención ambulatoria")
         }
     }
 }
-

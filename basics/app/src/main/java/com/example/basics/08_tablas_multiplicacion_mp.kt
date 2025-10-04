@@ -1,14 +1,14 @@
 package com.example.basics
 
 fun main() {
-    println("Tablas de Multiplicar")
-    print("Que tabla multiplicamos?")
+    println("Cálculo de Dosis Médica")
+    print("Ingrese la dosis base por paciente (mg): ")
 
-    val numero: Int = readLine()?.toIntOrNull() ?: 0
+    val dosisBase: Int = readLine()?.toIntOrNull() ?: 0
 
-    println("Tabla del $numero")
+    println("Cálculo de dosis para 10 pacientes con base de $dosisBase mg")
 
     for (i in 1..10) {
-        println("$numero x $i = ${numero * i}")
+        println("Paciente $i → Dosis total: ${dosisBase * i} mg")
     }
 }
