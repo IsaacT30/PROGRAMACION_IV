@@ -1,45 +1,41 @@
 package com.example.basics
 
-fun main (){
-    println("Mapas")
-    println("MPas inmutables")
+fun main() {
+    println("Mapas en Historias Clínicas")
+    println("Mapas inmutables")
 
-    val fuerzaJedis = mapOf(
-        "luke" to 85,
-        "Leila" to 80,
-        "Yoda" to 100
+    val signosVitales = mapOf(
+        "Isaac" to 98,
+        "Alejandro" to 95,
+        "Torres" to 90
     )
-    println("Fuerza Jedis: ${fuerzaJedis}")
-    println("Moa mutabe")
+    println("Signos Vitales Pacientes: ${signosVitales}")
 
-    val misionescompletadas= mutableMapOf<String,Int>()
-    misionescompletadas ["LUKE"] = 15
-    misionescompletadas ["Lia"] = 10
-    misionescompletadas.put("nan", 20)
+    println("Mapa mutable")
 
-    println("Misiones: ${misionescompletadas}")
+    val tratamientosCompletados = mutableMapOf<String, Int>()
+    tratamientosCompletados["Isaac"] = 5
+    tratamientosCompletados["Alejandro"] = 3
+    tratamientosCompletados.put("Torres", 7)
 
-    for ((jedi, fuerza) in fuerzaJedis){
-        println("$jedi tiene nivel de fuerza $fuerza")
+    println("Tratamientos completados: ${tratamientosCompletados}")
+
+    for ((paciente, valor) in signosVitales) {
+        println("$paciente tiene un nivel de signos vitales de $valor%")
     }
 
-    val palnetasvisitados = setOf(" Tatooine", "Coruscant", "Dago")
-    println("Planetas Visitados: ${palnetasvisitados}")
+    val areasVisitadas = setOf("Emergencias", "Laboratorio", "Hospitalización")
+    println("Áreas visitadas: ${areasVisitadas}")
 
-    val palnetaspeligrosos = setOf(" San Roque", "Marin", "Dos puentes")
-    println("Planetas Peligrosos: ${palnetaspeligrosos}")
+    val areasRestringidas = setOf("Quirófano", "UCI", "Laboratorio")
+    println("Áreas restringidas: ${areasRestringidas}")
 
     println("Operaciones de conjuntos")
-    val interseccion = palnetaspeligrosos intersect palnetasvisitados
-    val union = palnetaspeligrosos - palnetasvisitados
-    val diferencia = palnetaspeligrosos - palnetasvisitados
+    val interseccion = areasVisitadas intersect areasRestringidas
+    val union = areasVisitadas union areasRestringidas
+    val diferencia = areasVisitadas - areasRestringidas
 
-    println("Planetas Peligrosos y visitados : ${interseccion}")
-    println("Todos los planetas: ${union}")
-    println("Planetas Seguros visitados: ${diferencia}")
-
-
-
-
-
+    println("Áreas visitadas y restringidas: ${interseccion}")
+    println("Todas las áreas: ${union}")
+    println("Áreas seguras visitadas: ${diferencia}")
 }
