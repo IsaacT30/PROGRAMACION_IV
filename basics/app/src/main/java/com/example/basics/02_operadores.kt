@@ -12,3 +12,10 @@ fun main(){
     println("Necesita Ayuda: ${necesitaAyuda}")
 
 }
+
+
+
+
+
+
+
