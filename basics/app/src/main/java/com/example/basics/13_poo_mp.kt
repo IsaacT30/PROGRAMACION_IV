@@ -1,6 +1,6 @@
 package com.example.basics
 
-data class HistoriaClinica(
+data class HistoriaClinicad(
     val nombrePaciente: String,
     val edad: Int,
     val peso: Double,
@@ -22,12 +22,12 @@ data class HistoriaClinica(
 }
 
 // Funciones de extensión
-fun HistoriaClinica.esAdulto(): Boolean = edad >= 18
-fun HistoriaClinica.requiereAtencion(): Boolean = clasificacionIMC == "Obesidad" || clasificacionIMC == "Bajo peso"
+fun HistoriaClinicad.esAdulto(): Boolean = edad >= 18
+fun HistoriaClinicad.requiereAtencion(): Boolean = clasificacionIMC == "Obesidad" || clasificacionIMC == "Bajo peso"
 
 fun main() {
-    val paciente1 = HistoriaClinica(
-        nombrePaciente = "Carlos Pérez",
+    val paciente1 = HistoriaClinicad(
+        nombrePaciente = "Juan Torres",
         edad = 28,
         peso = 70.0,
         altura = 1.75,
@@ -38,7 +38,7 @@ fun main() {
     val (nombrePaciente, edad, peso, altura, diagnostico) = paciente1
     println("Nombre: $nombrePaciente, Edad: $edad, Peso: $peso, Altura: $altura, Diagnóstico: $diagnostico")
 
-    val paciente2 = paciente1.copy(nombrePaciente = "Ana López", peso = 85.0, altura = 1.60)
+        val paciente2 = paciente1.copy(nombrePaciente = "Ana Cepeda", peso = 85.0, altura = 1.60)
     println(paciente2)
 
     println("IMC de ${paciente2.nombrePaciente}: %.2f".format(paciente2.imc))

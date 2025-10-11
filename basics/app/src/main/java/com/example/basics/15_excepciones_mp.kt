@@ -3,7 +3,7 @@ package com.example.basics
 fun main() {
     try {
         println("Registro de historia clínica")
-        val temperatura = 38 / 0  // simulamos un error en el cálculo
+        val temperatura = 38 / 0  //  un error
         println("Temperatura registrada: $temperatura °C")
     } catch (e: Exception) {
         println(e)

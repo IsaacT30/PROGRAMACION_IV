@@ -32,12 +32,12 @@ class HistoriaClinica(val tipo: TipoDiagnostico, val nombrePaciente: String) {
 
 // Función principal
 fun main() {
-    val historia1 = HistoriaClinica(TipoDiagnostico.MODERADO, nombrePaciente = "Carlos Pérez")
+    val historia1 = HistoriaClinica(TipoDiagnostico.MODERADO, nombrePaciente = "Juan Torres")
     println(historia1)
     println(historia1.registrar())
     println(historia1.info())
 
-    val historia2 = HistoriaClinica(TipoDiagnostico.CRITICO, nombrePaciente = "Ana López")
+    val historia2 = HistoriaClinica(TipoDiagnostico.CRITICO, nombrePaciente = "Ana Cepeda")
     println(historia2)
     println(historia2.registrar())
     println(historia2.info())

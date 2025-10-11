@@ -26,7 +26,7 @@ fun evaluarPaciente(peso: Double, altura: Double): Pair<String, String> {
 fun main() {
     mostrarMensaje()
 
-    val registro = registrarPaciente(nombre = "Juan Pérez", edad = 32)
+    val registro = registrarPaciente(nombre = "Isaac Torres", edad = 32)
     println(registro)
 
     val imc = calcularIMC(peso = 72.0, altura = 1.75)
@@ -40,6 +40,6 @@ fun main() {
     val saludoLambda = { nombre: String -> "Bienvenido, paciente $nombre" }
     val resumenLambda = { imc: Double -> "Su IMC actual es de %.2f".format(imc) }
 
-    println(saludoLambda("Juan Pérez"))
+    println(saludoLambda("Isaac Torres"))
     println(resumenLambda(imc))
 }
