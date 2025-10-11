@@ -1,37 +1,50 @@
 package com.example.basics
 
-data class Jedi(
-    val nombre: String,
+data class HistoriaClinica(
+    val nombrePaciente: String,
     val edad: Int,
-    val nivelFuerza: Int,
-    val maestro: String? = null,
+    val peso: Double,
+    val altura: Double,
+    val diagnostico: String? = null,
 ) {
-    val rango: String
+    // Propiedad calculada: IMC (Índice de Masa Corporal)
+    val imc: Double
+        get() = peso / (altura * altura)
+
+    // Propiedad calculada: clasificación según el IMC
+    val clasificacionIMC: String
         get() = when {
-            nivelFuerza >= 90 -> "maestro"
-            nivelFuerza >= 70 -> "caballero"
-            nivelFuerza >= 50 -> "padawan"
-            else -> "Iniciado"
+            imc < 18.5 -> "Bajo peso"
+            imc < 25 -> "Peso normal"
+            imc < 30 -> "Sobrepeso"
+            else -> "Obesidad"
         }
 }
 
-fun Jedi.puedeEnsenar(): Boolean = nivelFuerza >= 5
-fun Jedi.entrenar(): Boolean = edad <= 5
+// Funciones de extensión
+fun HistoriaClinica.esAdulto(): Boolean = edad >= 18
+fun HistoriaClinica.requiereAtencion(): Boolean = clasificacionIMC == "Obesidad" || clasificacionIMC == "Bajo peso"
 
 fun main() {
-    val Luke = Jedi(
-        nombre = "Anakin",
-        edad = 25,
-        nivelFuerza = 75,
-        maestro = "Obiwam kenovi"
+    val paciente1 = HistoriaClinica(
+        nombrePaciente = "Carlos Pérez",
+        edad = 28,
+        peso = 70.0,
+        altura = 1.75,
+        diagnostico = "Sin complicaciones"
     )
-    println(Luke)
+    println(paciente1)
 
-    val (nombre, edad, nivelFuerza) = Luke
-    println("Nombre Jedi ${nombre}, edad:${edad}, nivel de la fuerza:${nivelFuerza}")
+    val (nombrePaciente, edad, peso, altura, diagnostico) = paciente1
+    println("Nombre: $nombrePaciente, Edad: $edad, Peso: $peso, Altura: $altura, Diagnóstico: $diagnostico")
 
-    val ashoka = Luke.copy(nombre = "asoka", nivelFuerza = 80)
-    println(ashoka)
+    val paciente2 = paciente1.copy(nombrePaciente = "Ana López", peso = 85.0, altura = 1.60)
+    println(paciente2)
+
+    println("IMC de ${paciente2.nombrePaciente}: %.2f".format(paciente2.imc))
+    println("Clasificación: ${paciente2.clasificacionIMC}")
+
+    println("¿${paciente2.nombrePaciente} es adulto?: ${paciente2.esAdulto()}")
+    println("¿Requiere atención médica?: ${paciente2.requiereAtencion()}")
 }
-
 

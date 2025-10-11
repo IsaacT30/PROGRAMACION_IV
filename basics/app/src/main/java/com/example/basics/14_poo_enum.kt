@@ -1,7 +1,5 @@
 package com.example.basics
 
-import android.R
-
 enum class TipoSable(val color: String, val poder: Int) {
     AZUL("azul", 85) {
         override fun descripcion() = "Sable tradicional"
