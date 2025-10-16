@@ -6,3 +6,4 @@ while (i <= n) {
   print("$tabla x $i = ${tabla*i}");
   i++;
 }
+}
