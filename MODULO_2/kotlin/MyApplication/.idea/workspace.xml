@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fb9010b5-83e7-4bbc-b812-1babaf5e85c7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../basics/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/androidTest/java/com/example/basics/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/01_variables.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/01_variables_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/02_operadores.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/02_operadores_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/03_operadores_arimeticas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/03_operadores_arimeticas_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/04_operadores_igualdad.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/04_operadores_igualdad_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/05_condicionales.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/05_condicionales_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/06_calculadora.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/06_calculadora_condicional.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/06_calculadora_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/07_bucles.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/07_bucles_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/08_tablas_multiplicacion.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/08_tablas_multiplicacion_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/09_mapas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/09_mapas_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/10_listas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/10_listas_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/11_funciones.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/11_funciones_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/12_ejercicio_en_clase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/13_poo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/13_poo_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/14_poo_enum.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/14_poo_enum_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/15_excepciones.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/15_excepciones_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/16_excepciones_personalizadas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/16_execpciones_personalizadas_mp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/Ejercicios_en_clase_16_10_2025.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/Tarea_semana2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/WECOME_KOTLIN.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/java/com/example/basics/WELCOME_KOTLIN_MP.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/app/src/test/java/com/example/basics/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../basics/settings.gradle.kts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="My Application" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="34M3bPlaR81e7MOmtmt2fQmfpRm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "Semana3"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb9010b5-83e7-4bbc-b812-1babaf5e85c7" name="Changes" comment="" />
+      <created>1761009684345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761009684345</updated>
+    </task>
+    <servers />
+  </component>
+</project>
