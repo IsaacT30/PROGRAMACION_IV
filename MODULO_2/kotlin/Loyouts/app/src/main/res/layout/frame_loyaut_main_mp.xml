@@ -14,24 +14,64 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Textitio"
-        android:textSize="24dp"
+        android:text="Registro de Historia Clínica"
+        android:textSize="24sp"
         android:background="@android:color/background_dark"
-        android:textColor="@color/white"/>
+        android:textColor="@android:color/white"
+        android:padding="8dp"/>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/holo_green_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paciente: Ana Torres"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagnóstico: Dolor dental agudo"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:paddingTop="48dp"
+            android:paddingStart="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tratamiento: Limpieza y revisión general"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:paddingTop="88dp"
+            android:paddingStart="8dp"/>
+    </FrameLayout>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@android:drawable/ic_menu_save"
+        android:layout_gravity="start|bottom"
+        android:layout_margin="32dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="32dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"
         android:layout_gravity="end|bottom"
-        android:layout_margin="64dp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_gravity="end|bottom"/>
+        android:layout_margin="32dp"/>
 
 </FrameLayout>

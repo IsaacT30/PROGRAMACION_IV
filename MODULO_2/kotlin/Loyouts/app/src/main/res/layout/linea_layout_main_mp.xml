@@ -8,84 +8,86 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:background="@android:color/holo_orange_dark"
-    tools:context=".MainActivity">
+    tools:context=".HistoriaClinicaActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to kotlin Xml!"
+        android:text="Historia Clínica"
         android:background="@android:color/holo_green_light"
-        />
+        android:textSize="22sp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dinujando pantallas!"
-        />
+        android:text="Registro de paciente"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar1!"
-        android:background="@android:color/holo_green_light"
-        />
+        android:text="Agregar paciente"
+        android:background="@android:color/holo_green_light"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar2!"
+        android:text="Buscar historia"
         android:background="@android:color/holo_blue_light"
         android:layout_margin="16dp"
-        android:padding="16dp"
-        />
+        android:padding="16dp"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar3!"
+        android:text="Actualizar datos"
         android:background="@android:color/holo_green_light"
         android:layout_margin="16dp"
-        android:padding="16dp"
-        />
+        android:padding="16dp"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar4!"
+        android:text="Eliminar registro"
         android:background="@android:color/holo_green_light"
         android:layout_margin="16dp"
-        android:padding="16dp"
-        />
+        android:padding="16dp"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar5!"
+        android:text="Ver todas"
         android:background="@android:color/holo_green_light"
         android:layout_margin="16dp"
-        android:padding="16dp"
-        />
+        android:padding="16dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:gravity="end|center_vertical">\
+        android:gravity="end|center_vertical">
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aceptar"
+            android:text="Guardar"
             android:background="@android:color/background_light"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aceptar"
+            android:text="Editar"
             android:background="@android:color/holo_blue_light"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aceptar"
+            android:text="Eliminar"
             android:background="@android:color/holo_orange_light"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aceptar"
+            android:text="Salir"
             android:background="@android:color/primary_text_light_nodisable"/>
     </LinearLayout>
 </LinearLayout>

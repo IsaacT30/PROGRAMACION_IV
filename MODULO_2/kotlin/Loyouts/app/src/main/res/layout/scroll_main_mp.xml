@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".HistoriaClinicaActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ESTA ES UNA PLANTILLA CON SCROLL VIEW!"
+            android:text="HISTORIA CLÍNICA GENERAL"
             android:textSize="24sp"
             android:textAlignment="center"
             android:background="@android:color/holo_green_light" />
@@ -26,42 +26,52 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dibujando pantallas!" />
+            android:text="Nombre del paciente:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre completo"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edad:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la edad"
+            android:inputType="number"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagnóstico:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el diagnóstico"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tratamiento:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el tratamiento indicado"
+            android:background="@android:color/white"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aceptar1!"
-            android:background="@android:color/holo_green_light" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Aceptar2!"
-            android:background="@android:color/holo_blue_light"
-            android:layout_margin="16dp"
-            android:padding="16dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Aceptar3!"
-            android:background="@android:color/holo_green_light"
-            android:layout_margin="16dp"
-            android:padding="16dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Aceptar4!"
-            android:background="@android:color/holo_green_light"
-            android:layout_margin="16dp"
-            android:padding="16dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Aceptar5!"
+            android:text="Guardar Historia"
             android:background="@android:color/holo_green_light"
             android:layout_margin="16dp"
             android:padding="16dp" />
@@ -76,26 +86,22 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aceptar"
-                android:background="@android:color/background_light" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Aceptar"
+                android:text="Nueva"
                 android:background="@android:color/holo_blue_light" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aceptar"
-                android:background="@android:color/holo_orange_light" />
+                android:text="Editar"
+                android:background="@android:color/holo_orange_light"
+                android:layout_marginLeft="8dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aceptar"
-                android:background="@android:color/primary_text_light_nodisable" />
+                android:text="Eliminar"
+                android:background="@android:color/holo_red_light"
+                android:layout_marginLeft="8dp" />
         </LinearLayout>
 
     </LinearLayout>
