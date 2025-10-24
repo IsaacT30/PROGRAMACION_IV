@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            app:srcCompat="@drawable/cursos_ant" />
+            app:srcCompat="@drawable/ute_logo" />
 
         <EditText
             android:id="@+id/editTextText"

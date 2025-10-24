@@ -1,4 +1,4 @@
-package com.ute.multimedia
+package com.ute.multimedia // <<< FIX: Changed to match build.gradle.kts namespace
 
 import android.net.Uri
 import android.os.Bundle
@@ -8,52 +8,50 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.MediaController
 import android.widget.VideoView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+// If your IDE doesn't add it, you may need: import com.ute.multimedia.R
 
-class MainActivity : AppCompatActivity() {
+class MainActivity_1 : AppCompatActivity() {
 
     private lateinit var webView: WebView
     private lateinit var videoView: VideoView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_mp) // Asegúrate de que este archivo XML esté en res/layout/
 
-        // --- YouTube en WebView ---
-        webView = findViewById(R.id.webViewYouTube)
+        // Configurar WebView para el video educativo
+        webView = findViewById(R.id.webViewYouTube) // El ID debe coincidir con el XML
+        val webSettings = webView.settings
+        webSettings.javaScriptEnabled = true
+        webSettings.domStorageEnabled = true
+        webSettings.mediaPlaybackRequiresUserGesture = false // Permitir la reproducción de videos sin interacción
 
-        val ws: WebSettings = webView.settings
-        ws.javaScriptEnabled = true
-        ws.domStorageEnabled = true
-        ws.mediaPlaybackRequiresUserGesture = false
+        webView.webChromeClient = WebChromeClient() // Manejo de la interfaz de Chrome
+        webView.webViewClient = WebViewClient() // Evitar que se abran enlaces en el navegador
 
-        webView.webChromeClient = WebChromeClient()
-        webView.webViewClient = WebViewClient()
+        // Cargar el video educativo de YouTube
+        val videoEducativoUrl = "https://www.youtube.com/embed/VIDEO_CLINICO?rel=0&showinfo=0"
+        webView.loadUrl(videoEducativoUrl)
 
-        // Cargar el video de YouTube directamente
-        val youTubeEmbedUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&showinfo=0"
-        webView.loadUrl(youTubeEmbedUrl)
-
-        // --- MP4 local en VideoView (res/raw/demo.mp4) ---
-        videoView = findViewById(R.id.videoViewMp4)
-
+        // Configurar VideoView para reproducir el video local desde la carpeta raw
+        videoView = findViewById(R.id.videoViewMp4) // El ID debe coincidir con el XML
         val mediaController = MediaController(this)
-        mediaController.setAnchorView(videoView)
+        mediaController.setAnchorView(videoView) // Vincula el control de medios al VideoView
         videoView.setMediaController(mediaController)
 
-        // Usar URI correcta para acceder al archivo en res/raw
-        val videoUri: Uri = Uri.parse("android.resource://${packageName}/raw/demo")
+        // Establecer la URI del video desde la carpeta raw (asegúrate de que el archivo demo.mp4 esté presente)
+        val videoUri: Uri = Uri.parse("android.resource://${packageName}/raw/demo")  // Reemplaza "demo" por el nombre de tu archivo MP4
         videoView.setVideoURI(videoUri)
 
-        // Reproducir video cuando esté preparado
+        // Iniciar el video una vez que se haya cargado
         videoView.setOnPreparedListener { mp ->
-            mp.isLooping = false
-            videoView.start()
+            mp.isLooping = false // No hacer loop en el video
+            videoView.start() // Comenzar la reproducción
         }
     }
 
+    // Permitir navegación atrás en WebView
     override fun onBackPressed() {
         if (this::webView.isInitialized && webView.canGoBack()) {
             webView.goBack()

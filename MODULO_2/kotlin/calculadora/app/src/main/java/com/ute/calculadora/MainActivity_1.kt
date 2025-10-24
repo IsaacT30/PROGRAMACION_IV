@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
 
-class MainActivity : AppCompatActivity() {
+class MainActivity_1 : AppCompatActivity() {
 
     private lateinit var tvDisplay: TextView
     private var current = "0"
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_mp)
 
         findViewById<MaterialToolbar>(R.id.toolbar)?.setNavigationOnClickListener { finish() }
         tvDisplay = findViewById(R.id.tvDisplay)
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         val btn8 = findViewById<Button>(R.id.btn8)
         val btn9 = findViewById<Button>(R.id.btn9)
 
-        listOf<Button>(btn0,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9).forEach { b ->
+        listOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9).forEach { b ->
             b.setOnClickListener { inputDigit(b.text.toString()) }
         }
 
@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnSub).setOnClickListener { handleOp('-') }
         findViewById<Button>(R.id.btnMul).setOnClickListener { handleOp('*') }
         findViewById<Button>(R.id.btnDiv).setOnClickListener { handleOp('/') }
-        findViewById<Button>(R.id.btnEq).setOnClickListener  { handleOp('=') }
-        findViewById<Button>(R.id.btnAC).setOnClickListener   { reset() }
+        findViewById<Button>(R.id.btnEq).setOnClickListener { handleOp('=') }
+        findViewById<Button>(R.id.btnAC).setOnClickListener { reset() }
         findViewById<Button>(R.id.btnBack).setOnClickListener { backspace() }
 
         updateDisplay()
@@ -83,8 +83,17 @@ class MainActivity : AppCompatActivity() {
         op = if (nextOp == '=') null else nextOp
     }
 
-    private fun reset() { current = "0"; last = null; op = null; updateDisplay() }
-    private fun backspace() { current = if (current.length > 1) current.dropLast(1) else "0"; updateDisplay() }
+    private fun reset() {
+        current = "0"
+        last = null
+        op = null
+        updateDisplay()
+    }
+
+    private fun backspace() {
+        current = if (current.length > 1) current.dropLast(1) else "0"
+        updateDisplay()
+    }
 
     private fun trim(value: Double): String {
         val s = String.format("%.6f", value).trimEnd('0').trimEnd('.')

@@ -14,7 +14,7 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="YouTube (WebView) + MP4 (VideoView)"
+            android:text="Videos de Historias Clínicas"
             android:textStyle="bold"
             android:textSize="18sp"
             android:paddingBottom="12dp" />
@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1) YouTube dentro de WebView" />
+            android:text="1) Video educativo en WebView" />
 
         <WebView
             android:id="@+id/webViewYouTube"
@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2) Reproducir MP4 local (res/raw/demo.mp4)" />
+            android:text="2) Video de simulación local (res/raw/demo.mp4)" />
 
         <VideoView
             android:id="@+id/videoViewMp4"

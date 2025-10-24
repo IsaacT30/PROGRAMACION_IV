@@ -32,21 +32,9 @@ class MainActivity : AppCompatActivity() {
         webView.webChromeClient = WebChromeClient()
         webView.webViewClient = WebViewClient()
 
+        // Cargar el video de YouTube directamente
         val youTubeEmbedUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&showinfo=0"
-
-        val html = """
-            
-              
-                
-                body{margin:0;background:#000;}
-              
-              
-                
-              
-            
-        """.trimIndent()
-
-        webView.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null)
+        webView.loadUrl(youTubeEmbedUrl)
 
         // --- MP4 local en VideoView (res/raw/demo.mp4) ---
         videoView = findViewById(R.id.videoViewMp4)
@@ -55,9 +43,11 @@ class MainActivity : AppCompatActivity() {
         mediaController.setAnchorView(videoView)
         videoView.setMediaController(mediaController)
 
-        val videoUri: Uri = Uri.parse("android.resource://${'$'}packageName/${'$'}{R.raw.demo}")
+        // Usar URI correcta para acceder al archivo en res/raw
+        val videoUri: Uri = Uri.parse("android.resource://${packageName}/raw/demo")
         videoView.setVideoURI(videoUri)
 
+        // Reproducir video cuando esté preparado
         videoView.setOnPreparedListener { mp ->
             mp.isLooping = false
             videoView.start()

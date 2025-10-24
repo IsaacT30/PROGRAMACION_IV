@@ -12,7 +12,7 @@
         android:id="@+id/textViewTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contador Básico"
+        android:text="Pacientes Atendidos"
         android:textColor="#58a6ff"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -55,5 +55,4 @@
         android:layout_height="wrap_content"
         android:text="Reiniciar"
         android:layout_marginTop="24dp"/>
-
 </LinearLayout>
