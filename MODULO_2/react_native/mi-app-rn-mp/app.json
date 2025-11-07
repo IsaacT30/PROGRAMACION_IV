@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "mi-app-rn-mp",
+    "slug": "mi-app-rn-mp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    ,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Necesitamos la cámara para tomar fotos del proyecto.",
+        "NSPhotoLibraryAddUsageDescription": "Guardaremos las fotos que captures.",
+        "NSPhotoLibraryUsageDescription": "Necesitamos acceder a tu galería.",
+        "NSLocationWhenInUseUsageDescription": "Usaremos tu ubicación para mostrar tu posición en el mapa."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
