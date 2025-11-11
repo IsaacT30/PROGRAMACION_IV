@@ -10,12 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ComposeHolaMundo">
+        android:theme="@style/Theme.Hellojetpackcompose">
         <activity
-            android:name=".MainActivity3"
+            android:name=".MainNavigation"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.ComposeHolaMundo">
+            android:theme="@style/Theme.Hellojetpackcompose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

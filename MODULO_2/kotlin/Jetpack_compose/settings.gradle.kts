@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ComposeHolaMundo"
+rootProject.name = "hellojetpackcompose"
 include(":app")
  

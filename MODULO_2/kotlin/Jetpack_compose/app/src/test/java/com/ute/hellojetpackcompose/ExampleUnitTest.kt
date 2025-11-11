@@ -1,4 +1,4 @@
-package com.ute.composeholamundo
+package com.ute.hellojetpackcompose
 
 import org.junit.Test
 

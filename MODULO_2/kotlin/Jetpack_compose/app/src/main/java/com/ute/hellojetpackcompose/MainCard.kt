@@ -1,4 +1,4 @@
-package com.ute.composeholamundo
+package com.ute.hellojetpackcompose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -15,7 +15,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-class MainActivity3 : ComponentActivity() {
+class MainCard : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent { FichaUsuarioApp() }

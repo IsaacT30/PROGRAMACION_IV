@@ -1,5 +1,4 @@
-package com.ute.composeholamundo
-
+package com.ute.hellojetpackcompose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,28 +8,30 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-class MainActivity2 : ComponentActivity() {
+class MainBoton : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { AppCampoTexto() }
+        setContent { AppEstadoBasico() }
     }
 }
 
 @Composable
-fun AppCampoTexto() {
+fun AppEstadoBasico() {
     MaterialTheme {
         Surface(Modifier.fillMaxSize()) {
-            CampoTextoScreen()
+            EstadoBasicoScreen()
         }
     }
 }
 
 @Composable
-fun CampoTextoScreen() {
-    var nombre by remember { mutableStateOf("") }
+fun EstadoBasicoScreen() {
+    var activo by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier
@@ -39,24 +40,16 @@ fun CampoTextoScreen() {
         verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterVertically),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        OutlinedTextField(
-            value = nombre,
-            onValueChange = { nombre = it },
-            label = { Text("Escribe tu nombre") },
-            singleLine = true
-        )
-
-        Button(onClick = { nombre = "" }) {
-            Text("Limpiar")
+        Text(if (activo) "Modo ACTIVO ✅" else "Modo INACTIVO ⛔")
+        Button(onClick = { activo = !activo }) {
+            Text(if (activo) "Desactivar" else "Activar",
+                color= Color(0xffffffff),
+                fontFamily =FontFamily.Cursive
+            )
         }
-
-        Text(
-            text = if (nombre.isBlank()) "Aún no has escrito nada..." else "Hola, $nombre 👋",
-            style = MaterialTheme.typography.titleMedium
-        )
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-private fun CampoTextoPreview() { AppCampoTexto() }
+private fun EstadoPreview() { AppEstadoBasico() }
