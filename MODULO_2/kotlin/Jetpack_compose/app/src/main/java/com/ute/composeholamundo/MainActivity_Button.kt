@@ -11,25 +11,25 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-class MainActivity : ComponentActivity() {
+class MainActivity1 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { AppCampoTexto() }
+        setContent { AppEstadoBasico() }
     }
 }
 
 @Composable
-fun AppCampoTexto() {
+fun AppEstadoBasico() {
     MaterialTheme {
         Surface(Modifier.fillMaxSize()) {
-            CampoTextoScreen()
+            EstadoBasicoScreen()
         }
     }
 }
 
 @Composable
-fun CampoTextoScreen() {
-    var nombre by remember { mutableStateOf("") }
+fun EstadoBasicoScreen() {
+    var activo by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier
@@ -38,24 +38,14 @@ fun CampoTextoScreen() {
         verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterVertically),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        OutlinedTextField(
-            value = nombre,
-            onValueChange = { nombre = it },
-            label = { Text("Escribe tu nombre") },
-            singleLine = true
-        )
+        Text(if (activo) "Modo ACTIVO ✅" else "Modo INACTIVO ⛔")
 
-        Button(onClick = { nombre = "" }) {
-            Text("Limpiar")
+        Button(onClick = { activo = !activo }) {
+            Text(if (activo) "Desactivar" else "Activar")
         }
-
-        Text(
-            text = if (nombre.isBlank()) "Aún no has escrito nada..." else "Hola, $nombre 👋",
-            style = MaterialTheme.typography.titleMedium
-        )
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-private fun CampoTextoPreview() { AppCampoTexto() }
+private fun EstadoPreview() { AppEstadoBasico() }
