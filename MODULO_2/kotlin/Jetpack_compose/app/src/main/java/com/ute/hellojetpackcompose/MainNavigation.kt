@@ -1,4 +1,4 @@
-package com.ute.hellojetpackcompose
+package com.example.hellojetpackcompose
 
 import android.os.Bundle
 import java.net.URLEncoder
@@ -19,7 +19,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
 
-data class UsuarioNav(val id: Int, val nombre: String)
+data class UsuarioNavigation(val id: Int, val nombre: String)
 
 class MainNavigation : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,12 +69,12 @@ fun NavBasicaApp() {
 
 @Composable
 fun HomeScreen(onOpenDetail: (Int, String) -> Unit) {
-    val UsuarioNavs = remember {
+    val usuarios = remember {
         listOf(
-            UsuarioNav(1, "Ana Torres"),
-            UsuarioNav(2, "Luis Pérez"),
-            UsuarioNav(3, "María López"),
-            UsuarioNav(4, "Carlos Ruiz")
+            UsuarioNavigation(1, "Ana Torres"),
+            UsuarioNavigation(2, "Luis Pérez"),
+            UsuarioNavigation(3, "María López"),
+            UsuarioNavigation(4, "Carlos Ruiz")
         )
     }
 
@@ -84,7 +84,7 @@ fun HomeScreen(onOpenDetail: (Int, String) -> Unit) {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        Text("Home: selecciona un UsuarioNav", style = MaterialTheme.typography.titleLarge)
+        Text("Home: selecciona un usuario", style = MaterialTheme.typography.titleLarge)
 
         LazyColumn(
             modifier = Modifier
@@ -92,7 +92,7 @@ fun HomeScreen(onOpenDetail: (Int, String) -> Unit) {
                 .weight(1f),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            items(UsuarioNavs, key = { it.id }) { user ->
+            items(usuarios, key = { it.id }) { user ->
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()

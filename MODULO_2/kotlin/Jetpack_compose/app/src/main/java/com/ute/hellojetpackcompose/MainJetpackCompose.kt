@@ -1,4 +1,4 @@
-package com.ute.hellojetpackcompose
+package com.example.hellojetpackcompose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -15,7 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-class MainJetpackCompose : ComponentActivity() {
+class MainJetpackCompose: ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent { HolaMundoApp() }
@@ -30,16 +30,14 @@ fun HolaMundoApp() {
                 Text("Hola, Jetpack Compose")
             }
             Box(Modifier
-                .fillMaxSize()
-                .padding(top = 30.dp),
-                contentAlignment = Alignment.TopStart) {
-                Text(text = "Hola, Desde Arriba",
-                    color = Color(0xFF4CAF50), // verde
+                .fillMaxSize(),
+                contentAlignment = Alignment. TopStart){
+                Text(text = "Hola, desde Arriba",
+                    color= Color(0xFF4CAF50), //VERDE
                     fontSize = 28.sp,
                     fontWeight = FontWeight.Bold,
                     fontStyle = FontStyle.Italic
                 )
-
             }
         }
     }

@@ -1,4 +1,4 @@
-package com.ute.hellojetpackcompose
+package com.example.hellojetpackcompose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

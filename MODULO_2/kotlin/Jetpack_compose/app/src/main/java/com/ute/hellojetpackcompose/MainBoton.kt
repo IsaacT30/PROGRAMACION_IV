@@ -1,4 +1,5 @@
-package com.ute.hellojetpackcompose
+package com.example.hellojetpackcompose
+
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+
 
 class MainBoton : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,10 +43,11 @@ fun EstadoBasicoScreen() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(if (activo) "Modo ACTIVO ✅" else "Modo INACTIVO ⛔")
+
         Button(onClick = { activo = !activo }) {
             Text(if (activo) "Desactivar" else "Activar",
-                color= Color(0xffffffff),
-                fontFamily =FontFamily.Cursive
+                color= Color(0xff880e4f),
+                fontFamily = FontFamily.Cursive
             )
         }
     }
