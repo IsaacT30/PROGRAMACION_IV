@@ -2,12 +2,14 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
 import { Parte05Lab } from "./src/screens/Parte05Lab";
-
+import { Parte06Lab } from "./src/screens/Parte06Lab";
+import { Parte07Lab } from "./src/screens/Parte07Lab";
+import { Parte08Lab } from "./src/screens/Parte08Lab";
 
 export default function App() {
   return (
     <>
-      <Parte05Lab />
+      <Parte08Lab />
       <StatusBar style="light" />
     </>
   );

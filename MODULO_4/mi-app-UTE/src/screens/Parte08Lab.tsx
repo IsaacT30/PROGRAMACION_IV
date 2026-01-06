@@ -1,14 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
-import { WelcomeScreen } from "./WelcomeScreen";
-import { Badge } from "../components/common/Badge";
-import { Card } from "../components/common/Card";
-import { PrimaryButton } from "../components/common/PrimaryButton";
-import { DemoScreen } from "./DemoScreen";
+import { ClockDemo } from "./ClockDemo";
 
-export function Parte05Lab() {
+export function Parte08Lab() {
   return (
-    <View style={styles.stage}>
-      <DemoScreen />
+    <View style={styles.container}>
+      <Text style={styles.h1}>Parte 8 Lab — useEffect</Text>
+
+      {/* Cambia aquí qué ejemplo estás probando */}
+      <View style={styles.stage}>
+        <ClockDemo />
+      </View>
     </View>
   );
 }
