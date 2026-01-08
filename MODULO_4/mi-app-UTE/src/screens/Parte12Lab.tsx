@@ -1,19 +1,21 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Promedio } from "./Promedio";
+import { CardPatternDemo } from "../demos/parte12/CardPatternDemo";
 
-export function Parte07Lab() {
+export function Parte12Lab() {
   return (
     <View style={styles.container}>
-      <Text style={styles.h1}>Parte 7 Lab — useState</Text>
+      <Text style={styles.h1}>Parte 12 Lab — Flexbox</Text>
 
-      {/* Cambia aquí qué ejemplo estás probando */}
       <View style={styles.stage}>
-        <Promedio />
+        <CardPatternDemo />
       </View>
+
+      <Text style={styles.help}>
+        Cambia el import y el componente renderizado para probar: CardPatternDemo, FlexRatioDemo, CardPatternDemo, etc.
+      </Text>
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -32,5 +34,10 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     borderWidth: 1,
     borderColor: "#30363d",
+  },
+  help: {
+    marginTop: 12,
+    color: "#8b949e",
+    lineHeight: 18,
   },
 });

@@ -1,15 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
-import { ClockDemo } from "./ClockDemo";
+import { AbortFetchDemo } from "./AbortFetchDemo";
 
 export function Parte08Lab() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.h1}>Parte 8 Lab — useEffect</Text>
-
-      {/* Cambia aquí qué ejemplo estás probando */}
-      <View style={styles.stage}>
-        <ClockDemo />
-      </View>
+    <View style={styles.stage}>
+      <AbortFetchDemo  />
     </View>
   );
 }

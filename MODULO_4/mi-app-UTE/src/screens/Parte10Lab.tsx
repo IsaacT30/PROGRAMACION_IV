@@ -1,14 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Promedio } from "./Promedio";
+import { TimerRefDemo  } from "./TimerRefDemo";
+import { RefCounter } from "./RefCounter";
 
-export function Parte07Lab() {
+export function Parte10Lab() {
   return (
     <View style={styles.container}>
-      <Text style={styles.h1}>Parte 7 Lab — useState</Text>
+      <Text style={styles.h1}>Parte 10 Lab — useRef / forwardRef</Text>
 
       {/* Cambia aquí qué ejemplo estás probando */}
       <View style={styles.stage}>
-        <Promedio />
+        <TimerRefDemo  />
       </View>
     </View>
   );

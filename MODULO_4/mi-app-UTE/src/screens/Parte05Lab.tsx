@@ -7,8 +7,28 @@ import { DemoScreen } from "./DemoScreen";
 
 export function Parte05Lab() {
   return (
-    <View style={styles.stage}>
-      <DemoScreen />
+    <View style={styles.container}>
+      <Text style={styles.h1}>Parte 5 Lab — Componentes & Props</Text>
+        <View style={[styles.stage, { padding: 16, justifyContent: "center" }]}>
+            <Card>
+              <Badge label="Dentro de Card" variant="INFO" />
+            </Card>
+            <View style={{ height: 10 }} />
+            <Badge label="INFO" variant="INFO" />
+            <View style={{ height: 10 }} />
+            <Badge label="SUCCESS" variant="SUCCESS" />
+            <View style={{ height: 10 }} />
+            <Badge label="WARNING" variant="WARNING" />
+            <View style={{ height: 10 }} />
+            <Badge label="DANGER" variant="DANGER" />
+            <PrimaryButton title="Tap aquí" onPress={() => console.log("Feliz Navidad")} />
+        </View>
+
+      {/* Cambia aquí qué ejemplo estás probando */}
+      <View style={styles.stage}>
+        <WelcomeScreen />
+        <DemoScreen />
+      </View>
     </View>
   );
 }

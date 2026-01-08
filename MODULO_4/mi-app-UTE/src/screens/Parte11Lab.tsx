@@ -1,14 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Promedio } from "./Promedio";
+import { TodosScreen } from "./TodosScreen";
 
-export function Parte07Lab() {
+export function Parte11Lab() {
   return (
     <View style={styles.container}>
-      <Text style={styles.h1}>Parte 7 Lab — useState</Text>
+      <Text style={styles.h1}>Parte 11 Lab — Custom Hooks</Text>
 
-      {/* Cambia aquí qué ejemplo estás probando */}
       <View style={styles.stage}>
-        <Promedio />
+        <TodosScreen />
       </View>
     </View>
   );

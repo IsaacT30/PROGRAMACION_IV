@@ -1,14 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
-import { StylesDemo } from "./StylesDemo";
-import { Banner } from "../components/common/Banner";
-import { Panel } from "../components/common/Panel";
 import { TokenDemo } from "./TokenDemo";
 
 export function Parte06Lab() {
   return (
-        <View style={styles.stage}>
-            <TokenDemo />
-        </View>
+    <View style={styles.stage}>
+        <TokenDemo />
+    </View>
   );
 }
 
