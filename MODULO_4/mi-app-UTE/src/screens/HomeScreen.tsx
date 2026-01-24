@@ -23,6 +23,13 @@ export function HomeScreen({ navigation }: Props) {
           >
               <Text style={styles.btnText}>Ir a Área del Trapecio</Text>
           </Pressable>
+
+          <Pressable
+              style={[styles.btn, { marginTop: 10 }]}
+              onPress={() => navigation.navigate("Settings")}
+            >
+              <Text style={styles.btnText}>Abrir Settings (Storage)</Text>
+          </Pressable>
     </View>
   );
 }

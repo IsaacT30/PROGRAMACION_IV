@@ -9,6 +9,9 @@ import {
   TextInput,
   View,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import type { RootStackParamList } from "@/navigation/types";
 import { isValidEmail, minLen } from "@/utils/validators";
 
 type LoginForm = {
@@ -19,6 +22,7 @@ type LoginForm = {
 type LoginErrors = Partial<Record<keyof LoginForm, string>>;
 
 export function LoginFormScreen() {
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const [form, setForm] = useState<LoginForm>({ email: "", password: "" });
   const [errors, setErrors] = useState<LoginErrors>({});
   const [submitted, setSubmitted] = useState<boolean>(false);
@@ -68,7 +72,12 @@ export function LoginFormScreen() {
 
     if (Object.keys(e).length > 0) return;
 
-    Alert.alert("✅ OK", `Login simulado para: ${form.email}`);
+    Alert.alert("✅ OK", `Login exitoso para: ${form.email}`, [
+      {
+        text: "OK",
+        onPress: () => navigation.navigate("SquareRoot"),
+      },
+    ]);
   }
 
   return (

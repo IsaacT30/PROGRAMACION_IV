@@ -5,4 +5,5 @@ export type RootStackParamList = {
   Demo: undefined;
   LoginForm: undefined;
   TrapezoidArea: undefined;
+  SquareRoot: undefined;
 };
